@@ -26,12 +26,21 @@ const apiKey = 'bf87ca36';
      const resultsContainer = $('#results');
      resultsContainer.empty();
 
+
      if (data && data.Search && data.Search.length > 0) {
+
        data.Search.forEach(movie => {
-         const movieElement = `<div>
-                                 <h2>${movie.Title}</h2>
-                                 <p>${movie.Year}</p>
-                                 <img src="${movie.Poster}" alt="${movie.Title}">
+
+
+         const movieElement = `<div class="element-parrent">
+         <div class="element">
+
+         <img src="${movie.Poster}" alt="${movie.Title}" class="poster">
+         <div class="data">
+                                 <h2 class="title">${movie.Title}</h2>
+                                 <p class="year">${movie.Year}</p>
+                                 </div>
+                                 </div>
                                </div>`;
 
          resultsContainer.append(movieElement);
