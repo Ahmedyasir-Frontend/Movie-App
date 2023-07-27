@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;500;600;700;800;900&display=swap");
 body {
-  background-color: rgb(237, 242, 244);
   font-family: "Outfit", sans-serif;
 }
 
@@ -13,20 +12,24 @@ body {
   margin-left: 0px;
   padding: 10px;
   align-items: center;
+  max-height: 40px;
 }
 
 #searchInput {
   border: none;
   height: 30px;
-  width: 20%;
-  margin-left: 30%;
+  width: 43%;
+  margin-left: 1%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 #searchButton {
   background-color: #fff;
   border: none;
-  height: 30px;
-  width: 10%;
+  height: 32px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 @media (max-width: 700px) {
@@ -40,9 +43,82 @@ body {
 #results {
   margin: 5rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: unset;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 80px;
+  border: 0.5px solid;
+  border-color: rgb(196, 190, 190);
+  width: 40%;
+  margin-left: 20%;
+  padding: 30px;
+  margin-top: 10%;
+}
+
+.container {
+  display: flex;
+  padding-left: 17%;
+}
+
+.logo {
+  height: 30px;
+  margin-top: 1px;
+  margin-bottom: -10px;
+}
+
+svg {
+  color: #fff;
+}
+
+.menu {
+  color: #fff;
+  display: flex;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.h5 {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.search {
+  color: black;
+}
+
+.element {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.poster {
+  height: 80px;
+}
+
+.title {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 200px;
+}
+
+.year {
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-search {
+  margin-top: 3%;
+  margin-left: 20%;
+}
+
+.title-search {
+  margin-bottom: -9%;
+  margin-left: 20%;
+  margin-top: 5%;
 }/*# sourceMappingURL=Index.css.map */
