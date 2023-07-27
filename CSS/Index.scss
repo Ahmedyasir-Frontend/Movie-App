@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;500;600;700;800;900&display=swap');
+
+
+body{
+    background-color: rgb(237, 242, 244);
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav-bar {
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+align-items: center;
+}
+#searchInput{
+    border: none;
+    height: 30px;
+    width: 20%;
+    margin-left: 30%;
+}
+#searchButton{
+    background-color: #fff;
+    border: none;
+    height: 30px;
+    width: 10%;
+}
+@media (max-width: 700px) {
+    #searchInput{
+        border: none;
+        height: 30px;
+        width: 60%;
+        margin-left: 10%;
+    }
+  }
+  #results{
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px;
+  }
